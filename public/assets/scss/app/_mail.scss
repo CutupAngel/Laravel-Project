@@ -1,0 +1,92 @@
+.mail-list {
+    .list-group-item {
+        &.active {
+            color: $theme-color-primary;
+            background: lighten($theme-color-primary, 60%);
+            border-left: 3px solid $theme-color-primary;
+            font-weight: 500;
+        }
+    }
+}
+
+.mails {
+    .mail {
+        .name {}
+
+        .msg_content {}
+
+        &:hover {
+
+            .name,
+            .msg_content {
+                color: $theme-color-primary;
+            }
+        }
+
+        footer {
+            // font-size: 12px;
+            // background: lighten($theme-color-primary, 65%);
+        }
+    }
+
+}
+
+#test-list {
+    .pagination {
+        margin-top: 15px;
+
+        li {
+            margin-right: 10px;
+            text-align: center;
+
+            .page {
+                display: inline-block;
+                border: 1px solid #d2d2d2;
+                padding: 0px;
+                line-height: 26px;
+                height: 30px;
+                width: 30px;
+                box-shadow: 0 0.125rem 0.25rem #d2d2d2 !important;
+            }
+
+            &.active {
+                .page {
+                    color: $theme-color-primary;
+                    background: lighten($theme-color-primary, 60%);
+                    border-left: 3px solid $theme-color-primary;
+                }
+            }
+        }
+    }
+}
+
+.dt-pagination {
+    ul {
+        li {
+            margin-right: 10px;
+            text-align: center;
+
+            a {
+                display: inline-block;
+                border: 1px solid #d2d2d2;
+                padding: 0px;
+                line-height: 26px;
+                height: 30px;
+                width: 30px;
+                box-shadow: 0 0.125rem 0.25rem #d2d2d2 !important;
+            }
+
+            &.pager {}
+
+            &.active {
+                a {
+                    color: $theme-color-primary;
+                    background: lighten($theme-color-primary, 60%);
+                    border-left: 3px solid $theme-color-primary;
+                }
+
+                &.pager {}
+            }
+        }
+    }
+}
